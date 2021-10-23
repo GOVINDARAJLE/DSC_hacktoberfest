@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int t;
+cin>>t;
+while(t--){
+    int n,i,count=0;
+    cin>>n;
+    char a[n];
+    for(i=0;i<n;i++)
+    cin>>a[i];
+    for(i=0;i<n;i++){
+        
+        if(a[i]=='Y'){
+            cout<<"NOT INDIAN"<<endl;;
+            break;
+        }
+        if(a[i]=='I'){
+            cout<<"INDIAN"<<endl;
+            break;
+        }
+        if(a[i]=='N'){
+            count++;
+        }
+        if(count==n){
+            cout<<"NOT SURE"<<endl;
+            break;
+        }
+    }
+}
+	return 0;
+}
